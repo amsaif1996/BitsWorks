@@ -1,0 +1,332 @@
+1: Variable declaration technique
+   var carName= "Volvo";
+   var c=50
+   
+2:document.getElementById('demo').innerHTML
+can change the value of html src of img tag
+can change HTML style
+can hide HTML element as well
+can show the hidden HTML
+
+  document.getElementById('myImage').src='pic_bulb_on'
+  document.getElementById('demo').style.frontsize="35px";
+  document.getElementById('demo').style.display='none';
+  document.getElementById('demo').style.display='block';
+
+3:<scricpt>:
+
+<script>
+document.getElementById('demo').innerHTML="my first javascript"
+</script>
+
+function:
+
+<script>
+function myFunctuon()
+{
+  document.getElementById('demo').innerHTML = "paragraph is changed";
+}
+ 
+  script can be stored as an extarnal file.
+  extension example= myScript.js
+  External scripts cannot contain <script> tags.
+
+4: ways of display:
+   
+   <script>
+    document.getElementById("demo").innerHTML = 5 + 6;
+   </script>
+
+  <script>
+   display.write(5+6)
+  </script>
+
+**Using document.write() after an HTML document is loaded, will delete all existing HTML**
+
+  <script>
+   window.alert(5+6);
+  </script>
+
+To print the the page
+
+<button onclick="window.print()"> Print this page</button>
+
+
+5: 
+JavaScript ignores multiple spaces. You can add white space to your script to make it more readable.
+
+6:
+
+  <script>
+  var x,y;
+  x=5;
+  y=10'
+document.getElementId("demo").innerHTML=x+y;
+</script>
+
+ java script is case sensetive in case of identifiers.
+
+
+7:
+    
+8: 
+  <script>
+  var carname = "Volvo";
+  document.getElementById("demo").innerHTML = carName;
+</script>
+
+var person="John Doe" , carName = "Volvo", price=200; 
+
+9: Types of scopes
+   1: Global scope (variable declared globally)
+   2: Functional scope (variable declared functionally)
+   3:Block scope( only used in a block '{}')
+   
+
+  <script>
+  var x= 10
+  var x=2   
+document.getElementById('demo').innerHTML = x;
+</script>
+
+let is used for a variable for a specific block. cannot be used outside the block.
+
+ <script>
+ var i=5;
+for(var i=0; i<10; i++)
+{}
+document.getElementId('demo').innerHTML =i;
+</script>
+
+
+10: <script>
+    const cars = ["Saab, "Volvo" , "Bmw"];
+    cars[0] = "Toyota";
+    cars.push("Audi");
+
+document.getElementById("demo").innerHTML = cars;
+</script>
+
+11: When used on strings, the + operator is called the concatenation operator.
+    Adding two numbers, will return the sum, but adding a number and a string will return a string:
+
+    var x= 5+5;
+    var y = "5" +5;
+    var z = "Hello" + 5;
+    output = string
+
+12: <script>
+var x=5;
+   document.getElementById('demo').innerHTML=x**2
+</script>
+
+14: <script>
+var car = ["Saab", "Volvo", "BMW"];
+    document.getElementById('demo').innerHTML= car[0];
+</scriprt>
+
+objects are written in the curly braces
+
+<script>
+var person=
+{
+firstName : "jhon",
+lastName: "Doe",
+age: 50,
+eyecolor : "blue"};
+
+document.getELementById('demo').innerHTML = person.firstName + "is" + person.age + "years old";
+</script>
+
+keyword typeof returns the type of the variable or expression.
+typof null returns object.
+type of undefined returns undefined
+
+
+
+18: <script>
+    var txt = "abcdkjshgpadgdg"
+    document.getElementById('demo').innerHTML= txt.length;
+</script>
+
+
+<script>
+var x= "Jhon"; //x is a string here
+var y= new String("jhon");//y is an object here
+document.getELementById('demo').innerHTML=typeof x +<br>+ typeof y;
+</script> 
+
+19: <script>
+ var str="Please locate where 'locate' occurs!";
+ var pos = str.indexOf("locate");
+document.getElementById("demo").innerHTML = pos;
+</script>
+
+for slicing a string we can use slice,substring,substr keyword like:
+var str= "apple, banana, kwiw";
+var res = str.slice(7,12) (output banana)
+
+for replacing a word we can use keyword replace(x,y);
+example:
+var str= "please visit Microsoft";
+var txt= str.replace("Microsoft"."W3school);
+
+<script>
+var text1 = "Hello";
+var text2 = "World!";
+var texr3 = text1.concat(" ", text2);
+document.getElementById.innerHTML = text3;
+</script>
+
+
+20: "+" will concate 2 strings but other than the + operator
+    the other operator will work as they work normally example:
+  
+var x = "100";
+var y= "20";
+var z = x - y (ans will be 80)
+var z = x + y (ans will be  10020)
+
+
+21:toString() returns number into strings
+
+   convert variable to numbers
+   Number()
+   parseInt()
+   parseFloat()
+
+
+22: 
+    <script>
+    var cars =["Saab", "Volvo", "BMW"];
+    cars [0] = "Toyota";
+    cars [1] = "Benz"
+document.getElementById.innerHTML = cars;
+</sripts>
+
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.length;
+</scripts>
+
+
+<scripts>
+
+var fruits,texts,fLen,i;
+fruits=["Banana", "orange", "apple", "mango"];
+fLen= fruits.length;
+
+***text= "<ul>";
+for(i=0;i<flen;i++)
+{
+text+= "<li>" +fruits[i]+ "<li>";
+}
+text += "</ul>";
+document.getElementById.innerHTML = text;
+</script>***
+
+JS doesnt support arrays with named indexes
+always numbered indexes
+
+
+23:<script>
+var fruits=["Banana", "orange", "apple"];
+document.getElementById("demo").innerHTMl = fruits.joint("*");
+</script>
+
+pop() removes the last element of arry.
+
+<p id="demo1"></p>
+<p id= "demo2"></p>
+
+<script>
+var fruits=["mango","apple","banana"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits.pop(); 
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+push() adds a new element to the array in the end.
+
+<button = onlclick - "myFunction()">try it </button>
+<p id='demo'></p>
+
+<script>
+var fruits =["abc", "edc", "fgh"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction()
+{
+  fruits.push(kfg).
+document.getElementById("demo").innerHTML= fruits;
+}
+</script>
+
+shift() removes the first element of array.
+unshft() adds element at the first of array.
+
+
+delete fruits[0];(removes the value of first index of fruit array)
+
+The splice() method can be used to add new items to an array
+splice(2,0)
+The first parameter (2) defines the position where new elements should be added (spliced in).
+The second parameter (0) defines how many elements should be removed.
+
+concat() adds 2 arrays togather.
+
+<script>
+var myGirls = ["emily","lone"]
+var myBoys = ["emil","tobais","jhon"]
+var myChildres = myGirls.concat(myBoys);
+document.getElementById("demo").innerHTML = myChildres;
+</script>
+
+24:
+ <script>
+var points =[40,100,1,5,25,10];
+document,getElementById.('demo').innerHTML = points;
+
+function myFunction()
+{ points.sort(function(a,b){return a-b});
+document.getElementById("demo").innerHTML = points
+}
+</script>
+
+
+25: foreach calls a function once for each array element.
+
+filter() can be used for creating array from a existing array by filtering. Example:
+
+<script>
+var number =[45,4,9,16,25];
+var over18 = numbers.filter(myFunction);
+document.getElemenById("demo").innerHTML = over18
+
+function myFunction(value,index,array)
+{
+return value >18;
+}
+</script>
+
+
+The every() method check if all array values pass a tes
+
+
+26:
+<p id="demo"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML=d;
+</script>
+
+JS counts date 0-11
+0=january
+11=december
+
+JS default date is in mili sec.
+the default date(0) is 1 jan 1970.
+
+30: Loop:
