@@ -1,3 +1,5 @@
+initial commit
+
 1: Variable declaration technique
    var carName= "Volvo";
    var c=50
