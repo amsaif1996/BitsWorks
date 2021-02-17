@@ -1,0 +1,326 @@
+ Forms:
+1:
+<script>
+ funtion validateForm()
+{
+ var x= document.forms["myForm']["fname"].value;
+if(x=="")
+{
+ alert("Name must be filled out");
+return false;
+}
+
+}
+</script>
+
+<body>
+
+<form name = "myForm" action="/action_page.php" onsubmit="return validateForm()"
+method ="post">
+
+2:
+ for only number input validation(1-10):
+
+  <input id="numb">
+<button type="button" onclick="myFunction()">Submit</button>
+<p if="demo></p>
+
+<script>
+funtion myFunction(){
+var x,text;
+ x=document.getElementById("numb").value;
+
+if(isNaN(x)||x<1||x>10||){
+text="Input is not Valid"}
+else{
+text="inpout is ok";
+}
+document.getElementById("demo").innerHTML=text;
+}
+</script>
+
+
+with loop:
+
+<script>
+var txt="";
+var person={fname:"jhon",lName:"doe",age:25};
+var x;
+for(x in person)
+{
+ text+=person[x]+"";
+}
+document.getElementById("demo").innerHTML =txt;
+</script>
+
+Delete object properties:
+
+<p id="demo"></p>
+
+<script>
+var person =
+{
+firstname: "Jhon",
+lastname: "Doe",
+age: 50,
+eyecolor: "blue"
+};
+
+delete person.age;
+document.getElementById("demo").innerHTMl=person.firstname+ "is"+person.age+"years old.";
+</script>
+
+
+converting object to an array:
+
+<p id ="demo"></p>
+
+<script>
+var person ={name:"jhon",age:50,city:"New york"};
+var myArray = object.values(person);
+document.getElementBYId("demo").innerHTML = myArray;
+</script>
+
+
+converting Object to a String:
+
+<p id="demo"></p>
+<script>
+var person={name:"jhon",age:50,city:"New York"};
+
+var myString= JSON.stringify(person);
+document.getElementById("demo").innerHTMl =myString;
+</script>
+
+Constructor:
+
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+// Create two Person objects
+var myFather = new Person("John", "Doe", 50, "blue");
+var myMother = new Person("Sally", "Rally", 48, "green");
+
+// Display age
+document.getElementById("demo").innerHTML =
+"My father is " + myFather.age + ". My mother is " + myMother.age + "."; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Login:
+
+js:
+
+
+
+
+function myNumber(){
+    var x = document.getElementById("mobile").value;
+    IsMobileNumber(x);
+}
+
+function IsMobileNumber(txtMobId) {
+    var mob = /^\d{11}$/;
+    var txtMobile = document.getElementById("mobile").value;
+    if (mob.test(txtMobile) == false) {
+        alert("Please enter valid mobile number.");
+        txtMobile.focus();
+        return false;
+    }
+    return true;
+}
+
+HTML:
+<html>
+    <body>
+<script src="script.js"></script>
+ 
+    
+
+<form>
+
+    <input id="mobile" onchange="myNumber()">
+
+
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Form API:
+
+<input id="id1" type="number" min="100" max="300" required>
+<button onclick="myFuntion()">ok</button>
+<p if="demo"></p>
+
+<script>
+funtion myFuntion()
+{
+var inpObj=document.getElementById("id1");
+if(!inpObj.checkvalidity())
+{
+document.getElementById("demo").innerHTML = inpObj.validationMessage;
+} else{
+document.getElementById("demo").innerHTMl="Input ok";
+}
+}
+</script>
+
+
+JS Objects:
+
+<script>
+var person =
+{
+ firstName : "jhon",
+ lastName : "doe:,
+ age ; 50,
+ eyeColor : "blue"
+};
+document.getElementById("demo").innerHTML = person.firstName+ ""+person.lastName
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
