@@ -1,0 +1,32 @@
+<html>
+    <body>
+
+         <p id="demo"></p>
+
+         <script>
+             function dis(x)
+             {
+                 document.getElementById("demo").innerHTML=x;
+             }
+
+             function getFile(callback)
+             {
+                 let req = new XMLHttpRequest();
+                 req.open('GET',"Messi.html");
+                 req.onload = function()
+                 {
+                     if(req.status==200)
+                     {callback(req.responseText);}
+                     else{
+                         callback("error"+req.status);
+                     }
+                 }
+                 req.send();
+             }
+             getFile(dis);
+
+         </script>
+
+
+    </body>
+</html>
