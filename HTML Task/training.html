@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Personal Profile</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#saif {
+  position: absolute;
+  top: 40px;
+  left: 16px;
+  font-size: 18px;}
+
+header {
+  background-color: rgb(9, 10, 10);
+  padding: 30px;
+  /* text-align: center; */
+  font-size: 35px;
+  color: rgb(241, 31, 31);
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 10%;
+  height: 350px; /* only for demonstration, should be removed */
+  background: rgb(179, 138, 138);
+  
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 10px;
+
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 90%;
+  background-color: #2b0e0e;
+  color: rgb(214, 136, 136);
+  height: 350px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(24, 13, 13);
+  padding: 10px;
+  /* text-align: center; */
+  color: white;
+  
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2 align="center">A.M.Saif</h2>
+  <img id="saif" src="saif.JPG" alt="Picture of Saif" width="150" height="150">
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <h1><li><a href="layout.html">Details</a></li></h1>
+      <h1><li><a href="home.html">Home</a></li></h1>
+      <h1><li><a href="overview.html">Overview</a></li></h1>
+      <h1><li><a href="training.html">Training</a></li></h1>
+      <h1><li><a href="skill.html">Skill</a></li></h1>
+      <h1><li><a href="hobby.html">Hobbies</a></li></h1>
+    </ul>
+  </nav>
+  
+  <article>
+    <h2 style=color:DodgerBlue;>My Trainings</h2>
+    <ul>
+      <h1><li>JavaScript</li><br>
+       <li>HTML</li><br>
+       <li>CSS</li><br>
+    <li>BOOTSTRAP</li><br>
+    <li>JAVA</li><br></h1>
+    </ul>
+
+  </article>
+</section>
+
+<footer>
+ <address>
+     62/7 west tejturi bazar
+     Farmgate
+     Dhaka
+     Bangladesh
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      Phone:017923544563  &nbsp; &nbsp;  <a href="mailto:alimdsaif1996.com">Send email</a>   
+ </address> 
+
+ 
+</footer>
+
+</body>
+</html>
