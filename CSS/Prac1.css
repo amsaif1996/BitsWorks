@@ -46,10 +46,10 @@ p{
  .yt:hover{
      color:cyan ;
  }
- a:active{
+ .yt:active{
      color: darkmagenta;
  }
- a{float: right;}
+ .yt{float: right;}
 div.ovf{
     background-color: dimgray;
     color: floralwhite;
@@ -68,4 +68,59 @@ p.ho {
   div.hov:hover p {
     display: block;   
   }
+  #Grad{
+      color: black;
+    height: 50px;
+    background-color: red;
+    background-image: linear-gradient(red, yellow);
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(238, 217, 29);
+    color: black;
+  }
+  .topnav {
+     overflow: hidden;/*(Overflow dile kno backgrround color change hoi background-color: dilei hoar kotha over flow die scroll er kaj kore;) */
+    background-color: #333;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #67daf7;
+    text-align: center;
+    padding: 14px 16px;
+  }
+
+  #trans{
+    width: 100px;
+    height: 100px;
+    background: #5611f7;
+    transition: width 2s;
+  }
+  
+  #trans:hover {
+    width: 800px;
+  }
+
+.logo{
+    position: absolute;
+    left: 0px;
+    top: 0px; 
+}
+  
+  
 
