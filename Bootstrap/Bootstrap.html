@@ -8,6 +8,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+    </style>
 </head>
 <body>
   
@@ -15,13 +22,391 @@
   <h1>My First Bootstrap Page</h1>
   <p>This part is inside a .container-fluid class.</p>  
 </div>
+
+<br><hr>
+
+<div class="container">
 <h1>Grid:</h1>
 <div class="row">
     <div class="col" style="background-color: rgb(246, 194, 127);">Column</div>
     <div class="col" style="background-color: rgb(201, 255, 75);">Column</div>
     <div class="col" style="background-color: rgb(248, 97, 51);">Column</div>
 </div>
+</div>
+
+<div class="container">
+  <h3 class="display-4"> This is how display shows</h3>
+  <h2>For important text we use head <small>and for secondary text we use small</small></h2>
+</div>
+
+<br><hr>
+
+<div class="container">
+  <h1>Blockquotes</h1>
+  <p>The blockquote element is used to present content from another source:</p>
+  <blockquote class="blockquote">
+    <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+    <footer class="blockquote-footer">From WWF's website</footer>
+  </blockquote>
+</div>
+<br><hr>
+
+<div class="container">
+  <h2>Contextual Backgrounds</h2>
+  <p class="bg-primary text-white">This text is important.</p>
+  <p class="bg-success text-white">This text indicates success.</p>
+  <p class="bg-info text-white">This text represents some information.</p>
+  <p class="bg-warning text-white">This text represents a warning.</p>
+  <p class="bg-danger text-white">This text represents danger.</p>
+  <p class="bg-secondary text-white">Secondary background color.</p>
+  <p class="bg-dark text-white">Dark grey background color.</p>
+  <p class="bg-light text-dark">Light grey background color.</p>
+</div>
+
+
+<br><hr>
+
+<div class="container">
+<table class="table-striped table-dark table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A.M.</td>
+      <td>Saif</td>
+      <td>Saif@gmail.com</td>
+    </tr>
+    <tr>
+      <td>Mainul</td>
+      <td>Islam</td>
+      <td>Mainul@gmail.com</td>
+    </tr>
+    <tr>
+      <td>Hridoy</td>
+      <td>Mahmud</td>
+      <td>Hridoy@gmail.com</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<br><hr>
+
+<div class="container">
+   <img class="img-fluid mx-auto d-block" src="https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="background" width="460" height="345"> 
+</div>
+
+<br><hr>
+
+<div class="jumbotron">
+  <h1>jumbotron</h1>      
+  <p>A jumbotron indicates a big grey box for calling extra attention to some special content or information.</p>
+</div>
+
+<br><hr>
+
+<div class="container">
+  <h2>Animated Alerts</h2>
+ 
+  <div class="alert alert-success alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+  </div>
+
+  <div class="alert alert-info alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+  </div>
+
+  <div class="alert alert-warning alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+  </div>
+  
+  <div class="alert alert-danger alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+  </div>
+
+  <div class="alert alert-primary alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Primary!</strong> Indicates an important action.
+  </div>
+
+  <div class="alert alert-secondary alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Secondary!</strong> Indicates a slightly less important action.
+  </div>
+
+  <div class="alert alert-dark alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Dark!</strong> Dark grey alert.
+  </div>
+
+  <div class="alert alert-light alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Light!</strong> Light grey alert.
+  </div>
+</div>
+
+<br><hr>
+
+<div class="container">
+  <h2>Button Styles</h2>
+  <button type="button" class="btn">Basic</button>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-secondary">Secondary</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-dark">Dark</button>
+  <button type="button" class="btn btn-light">Light</button>
+  <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+
+  <button class="btn btn-dark" disabled>
+    <span class="spinner-grow spinner-grow-sm"></span> Loading..
+  </button>
+
+  <button class="btn btn-success">
+    <span class="spinner-border spinner-border-sm"></span> Loading..
+  </button>
+
+  <br><br>
+
+  <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Sony
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Tablet</a>
+        <a class="dropdown-item" href="#">Smartphone</a>
+      </div>
+    </div>
+</div>
+
+<br><hr>
+
+<div class="container">
+  <h2>Pill Badges</h2>
+  <h4><span class="badge badge-pill badge-primary">Primary</span>
+  <span class="badge badge-pill badge-secondary">Secondary</span>
+  <span class="badge badge-pill badge-success">Success</span>
+  <span class="badge badge-pill badge-danger">Danger</span>
+  <span class="badge badge-pill badge-warning">Warning</span></h4>
+  </div>
+
+  <br><hr>
+
+  <div class="container">
+    <h2>Badge inside a Button</h2>
+    <button type="button" class="btn btn-primary">
+      Messages <span class="badge badge-light">4</span>
+    </button>
+  </div>
+
+  <br><hr>
+
+  <div class="container">
+    <h2>Animated Progress Bar</h2>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%">70% Done</div>
+    </div>
+  </div>
+
+  <br><hr>
+
+  <div class="container">
+    <h2>Pagination</h2>
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </div>
+   
+  <br><hr>
+
+  <div class="container">
+    <h2>Linked Items</h2>
+   
+    <div class="list-group">
+      <a href="#" class="list-group-item active list-group-item-action">Action item</a>
+      <a href="#" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-success">Inbox <span class="badge badge-primary badge-pill">12</span></a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Secondary item</a>
+    </div>
+
+    <br><hr>
+
+    <div class="container">
+      <h2>Card</h2>
+      <div class="card border-dark" style="width:250px">
+        <img class="card-img-top" src="https://static01.nyt.com/images/2019/04/16/sports/16onsoccerweb-2/merlin_153612873_5bb119b9-8972-4087-b4fd-371cab8c5ba2-superJumbo.jpg" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Lionel Messi</h4>
+          <p class="card-text">The greatest of all time</p>
+          <a href="https://messi.com/" class="btn btn-primary stretched-link">See Profile</a>
+        </div>
+      </div>
+    </div>
+
+    <br><hr>
+
+    <div class="container">
+      <h2>Simple Collapsible</h2>
+      <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Click to See</button>
+      <div id="demo" class="collapse">
+       Hello Bootstrap4!
+      </div>
+    </div>
+
+    <br><hr>
+
+    <h4>NavBar</h4>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" >
+      <a class="navbar-brand" href="#">
+        <img src="https://png.pngtree.com/element_pic/00/16/09/2057e0eecf792fb.jpg "alt="logo" style="width:60px;">
+      </a>
+ 
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link"  href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Settings</a>
+        </li>
+      </ul>
+    </nav>
+
+    <br><hr>
+
+
+    <h4>Collapsible NavBar</h4>
+    <nav class="navbar bg-dark navbar-dark">
+      <a class="navbar-brand" href="#">
+        <img src="https://png.pngtree.com/element_pic/00/16/09/2057e0eecf792fb.jpg "alt="logo" style="width:60px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Settings</a>
+          </li>    
+        </ul>
+      </div>  
+    </nav>
+    <br><hr><br><br>
+
+    <div class="container">
+      <h2>Form Validation</h2>
+      
+      <form class="was-validated">
+        <div class="form-group">
+          <label for="uname">Username:</label>
+          <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember" required>i agree
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Check this checkbox to continue.</div>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+
+
+    </div>
+
+    <br><hr><br>
+
     
+    <div class="container">
+      <h2>Form Control Range and File</h2>
+      <form action="/action_page.php">
+        <div class="form-group">
+          <input type="range" class="form-control-range" name="range">
+        </div><br>
+        <div class="form-group">
+          <input type="file" class="form-control-file border" name="file">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <br><hr><br>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Los Angeles" width="500" height="300">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.ctfassets.net/hrltx12pl8hq/7yQR5uJhwEkRfjwMFJ7bUK/dc52a0913e8ff8b5c276177890eb0129/offset_comp_772626-opt.jpg?fit=fill&w=800&h=300" alt="Chicago" width="500" height="300">
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="New York" width="500" height="300">
+        </div>
+      </div>
+      
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <br><hr><br>
+    
+
+
+  
+  
+    
+    
+    
+
 
 
 
