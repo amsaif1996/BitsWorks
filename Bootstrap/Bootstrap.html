@@ -14,6 +14,7 @@
       width: 100%;
       height: 100%;
     }
+ 
     </style>
 </head>
 <body>
@@ -354,7 +355,7 @@
     
     <div class="container">
       <h2>Form Control Range and File</h2>
-      <form action="/action_page.php">
+      <form >
         <div class="form-group">
           <input type="range" class="form-control-range" name="range">
         </div><br>
@@ -366,39 +367,210 @@
     </div>
 
     <br><hr><br>
-
-    <div id="demo" class="carousel slide" data-ride="carousel">
+    
+    
+<div class="p-5">
+    <div id="sl" class="carousel slide" data-ride="carousel">
 
       <!-- Indicators -->
       <ul class="carousel-indicators">
-        <li data-target="#demo" data-slide-to="0" class="active"></li>
-        <li data-target="#demo" data-slide-to="1"></li>
-        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#sl" data-slide-to="0" class="active"></li>
+        <li data-target="#sl" data-slide-to="1"></li>
+        <li data-target="#sl" data-slide-to="2"></li>
       </ul>
       
       <!-- The slideshow -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Los Angeles" width="500" height="300">
+          <img src="https://cdn.wallpapersafari.com/81/79/UMbFje.jpg" alt="Field" width="1000" height="500">
+        <div class="carousel-caption">
+          <h3>Green Field</h1>
+            <p>Peace!</p>
+        </div>
+        
         </div>
         <div class="carousel-item">
-          <img src="https://images.ctfassets.net/hrltx12pl8hq/7yQR5uJhwEkRfjwMFJ7bUK/dc52a0913e8ff8b5c276177890eb0129/offset_comp_772626-opt.jpg?fit=fill&w=800&h=300" alt="Chicago" width="500" height="300">
+          <img src="https://wallpaperaccess.com/full/251618.jpg" alt="Maldives" width="1000" height="500">
+          <div class="carousel-caption">
+            <h3>Maldives!</h1>
+              <p>So Beautiful and Expensive!</p>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="New York" width="500" height="300">
+          <img src="https://cdn.wallpapersafari.com/75/62/af2tpC.jpg" alt=" Water" width="1000" height="500">
+          <div class="carousel-caption">
+            <h3>Shark Alert!</h1>
+              <p>Be careful</p>
+          </div>
         </div>
       </div>
       
       <!-- Left and right controls -->
-      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <a class="carousel-control-prev" href="#sl" data-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </a>
-      <a class="carousel-control-next" href="#demo" data-slide="next">
+      <a class="carousel-control-next" href="#sl" data-slide="next">
         <span class="carousel-control-next-icon"></span>
       </a>
     </div>
-    <br><hr><br>
+  </div>
     
+    <br><hr><br>
+
+    <div class="container">
+      <h2>Fading Modal</h2>
+     
+      <!-- Button to Open the Modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Open modal
+      </button>
+    
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">You Have Clicked the modal</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              Hello everyone. modal is kind of alert which has header body and footer.here footer contains the close button.
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><hr><br>
+
+<!--  
+    <div class="pre-scrollable">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">  
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#section1">Section 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section2">Section 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section3">Section 3</a>
+    </li>
+    <li class="nav-item">
+     
+    </li>
+  </ul>
+</nav>
+
+<div id="section1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px">
+  <h1>Section 1</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section2" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px">
+  <h1>Section 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section3" class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom:70px">
+  <h1>Section 3</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+    </div>
+    -->
+<div class="container">
+  <iframe src="ScrollSpy.html" width="100%" height="500"></iframe>
+</div>
+
+    <br><hr><br>
+
+
+    <div class="container mt-3">
+      <h2>Filterable Table</h2>
+      <input class="form-control" id="myInput" type="text" placeholder="Search..">
+      <br>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody id="myTable">
+          <tr>
+            <td>AM</td>
+            <td>Saif</td>
+            <td>Saif@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Mahmud</td>
+            <td>Hridoy</td>
+            <td>Hridoy@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Shishir</td>
+            <td>Ahmed</td>
+            <td>shishir@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Brac</td>
+            <td>It Services</td>
+            <td>Brac@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+      
+    
+    </div>
+    
+    <script>
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>
+
+<br><hr><br>
+
+<div>
+  <img src="https://i.ibb.co/Bf2MB4Y/grid.jpg" alt="SS" max-width="880" width="100%" height="110">
+</div>
+
+<br><hr><br>
+    
+  
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 bg-success">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+    <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 bg-warning">
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    </div>
+  </div>
+</div>
+
+
+<br><hr><br>
+
 
 
   
