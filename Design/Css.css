@@ -1,303 +1,279 @@
-.topbar{
-top: 0px;
-left: 0px;
-width: 100%;
-height: 13px;
-background: var(--unnamed-color-d10d74) 0% 0% no-repeat padding-box;
-background: #D10D74 0% 0% no-repeat padding-box;
-opacity: 1;
+*{
+    font-family: "Helvetica Neue";
+    size: 16px;
+}
+.topbar {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 13px;
+	background: #d10d74;
+	opacity: 1;
 }
 
-#navbar{
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    opacity: 1;
+#navbar {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	opacity: 1;
 }
 
-#logo{
-    top: 26px;
-left: 46px;
-width: 151px;
-height: 50px;
-background: transparent url('img/brac-logo rgb.png') 0% 0% no-repeat padding-box;
-opacity: 1;
-
+#logo {
+	
+	width: 100%;
+	height: 100%;
+	background: transparent url('img/brac-logo rgb.png') 0% 0% no-repeat padding-box;
+	opacity: 1;
 }
 
-
-#up{
-    top: 40px;
-left: 598px;
-width: 52px;
-height: 18px;
-font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/18px var(--unnamed-font-family-helvetica-neue);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-4d4f53);
-text-align: center;
-font: normal normal normal 16px/18px Helvetica Neue;
-letter-spacing: 0px;
-color: #4D4F53;
-opacity: 1;
+#up {
+	top: 40px;
+	left: 598px;
+	width: 52px;
+	height: 18px;
+	letter-spacing: 0;
+	color: #4d4f53;
+	text-align: center;
+	letter-spacing: 0px;
+	color: #4D4F53;
+	opacity: 1;
 }
 
 
-.close{
+/* .close{
     float: right;
-    font-size: 21px;
-    font-weight: 700;
+    
     line-height: 1;
     color: rgb(231, 34, 215);
     text-shadow: 0 1px 0 rgb(243, 34, 173);
     filter: alpha(opacity=20);
     opacity: 1;
+} */
+
+#clos {
+	border: 0;
 }
 
-.rounded-circle{
-    background: #fff4f4;
+.rounded-circle {
+	background: #fff4f4;
 }
 
-
-
-
-#links{
-
-font: var(--unnamed-font-style-normal) normal bold 25px/30px var(--unnamed-font-family-helvetica-neue);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-4d4f53);
-text-align: left;
-font: normal normal bold 25px/30px Helvetica Neue;
-letter-spacing: 0px;
-color: #4D4F53;
-opacity: 1;
-
-
-}
-
-#shared{
-   
-font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 15px/17px var(--unnamed-font-family-helvetica-neue);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-3db7e4);
-text-align: left;
-font: normal normal normal 15px/17px Helvetica Neue;
-letter-spacing: 0px;
-color: #3DB7E4;
-opacity: 1;
-}
-
-#Sharedinput{
+#links {
+    font-family: Arial;
+	font-weight: bold;
+	letter-spacing: 0;
+	color: #4d4f53;
+	text-align: left;
+	letter-spacing: 0px;
+	color: #4D4F53;
+	opacity: 1;
     
-background: #F7F7F7 0% 0% no-repeat padding-box;
-border-radius: 8px;
-opacity: 1;
 }
 
-#linktitle{
-   
-font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 15px/17px var(--unnamed-font-family-helvetica-neue);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-3db7e4);
-text-align: left;
-font: normal normal normal 15px/17px Helvetica Neue;
-letter-spacing: 0px;
-color: #3DB7E4;
-opacity: 1;
+#shared {
+	letter-spacing: 0;
+	color: #3db7e4;
+	text-align: left;
+	letter-spacing: 0px;
+	color: #3DB7E4;
+	opacity: 1;
 }
 
-
-#linkinput{
-  
-background: #F7F7F7 0% 0% no-repeat padding-box;
-border-radius: 8px;
-opacity: 1;
-
+#Sharedinput {
+	background: #F7F7F7 0% 0% no-repeat padding-box;
+	border-radius: 8px;
+	opacity: 1;
 }
 
+#linktitle {
+	letter-spacing: 0;
+	color: #3db7e4;
+	text-align: left;
+	letter-spacing: 0px;
+	color: #3DB7E4;
+	opacity: 1;
+}
 
-#pasteUrl{
-   
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 15px/17px var(--unnamed-font-family-helvetica-neue);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-3db7e4);
+#linkinput {
+	background: #F7F7F7 0% 0% no-repeat padding-box;
+	border-radius: 8px;
+	opacity: 1;
+}
+
+#pasteUrl {
+	letter-spacing: 0;
+	color: #3db7e4;
+	text-align: left;
+	letter-spacing: 0px;
+	color: #3DB7E4;
+	opacity: 1;
+}
+
+#pasteurlInput {
+	background: #F7F7F7 0% 0% no-repeat padding-box;
+	border-radius: 8px;
+	opacity: 1;
+}
+
+#Describe {
+	letter-spacing: 0;
+	color: #3db7e4;
+	text-align: left;
+	letter-spacing: 0px;
+	color: #3DB7E4;
+	opacity: 1;
+}
+
+#option {
+	letter-spacing: 0;
+	text-align: left;
+	letter-spacing: 0px;
+	color: #D2D2D2;
+}
+
+#DescribeInput {
+	background: #F7F7F7 no-repeat padding-box;
+	border-radius: 8px;
+	opacity: 1;
+}
+
+#Permission {
+	letter-spacing: 0;
+	color: #3db7e4;
+	text-align: left;
+	letter-spacing: 0px;
+	color: #3DB7E4;
+	opacity: 1;
+}
+
+#ddown {
+	background: #F7F7F7 no-repeat padding-box;
+	border-radius: 4px;
+	opacity: 1;
+}
+
+#menu1 {
+	letter-spacing: 0;
+	color: #4d4f53;
+	text-align: left;
+	letter-spacing: 0px;
+	color: #4D4F53;
+	opacity: 1;
+}
+
+#PubicLabel {
+	letter-spacing: 0;
+	text-align: left;
+	letter-spacing: 0px;
+	color: #A0A5AF;
+	opacity: 1;
+}
+
+#OnlyMeLabel {
+	letter-spacing: 0;
+	text-align: left;
+	letter-spacing: 0px;
+	color: #A0A5AF;
+	opacity: 1
+}
+
+#SpecificPerson {
+	letter-spacing: 0;
+	text-align: left;
+	letter-spacing: 0px;
+	color: #A0A5AF;
+	opacity: 1
+}
+
+#DivisionAndGrade {
+	letter-spacing: 0;
+	text-align: left;
+	letter-spacing: 0px;
+	color: #A0A5AF;
+	opacity: 1
+}
+
+#ddown2 {
+	letter-spacing: 0;
+	text-align: left;
+	letter-spacing: 0px;
+	color: #A0A5AF;
+	opacity: 1;
+}
+
+#menu2 {
+	letter-spacing: 0;
+	text-align: left;
+	letter-spacing: 0px;
+	color: #A0A5AF;
+	opacity: 1;
+}
+#Name{
     text-align: left;
-    font: normal normal normal 15px/17px Helvetica Neue;
-    letter-spacing: 0px;
-    color: #3DB7E4;
-    opacity: 1;
-}
-
-
-#pasteurlInput{
-   
-background: #F7F7F7 0% 0% no-repeat padding-box;
-border-radius: 8px;
-opacity: 1;
-}
-
-
-#Describe{
-   
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 15px/17px var(--unnamed-font-family-helvetica-neue);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-3db7e4);
-    text-align: left;
-    font: normal normal normal 15px/17px Helvetica Neue;
-    letter-spacing: 0px;
-    color: #3DB7E4;
-    opacity: 1;
-}
-
-#option{
-   
-font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 14px/16px var(--unnamed-font-family-helvetica-neue);
-letter-spacing: var(--unnamed-character-spacing-0);
-text-align: left;
-font: normal normal normal 14px/16px Helvetica Neue;
-letter-spacing: 0px;
-color: #D2D2D2;
-}
-
-
-#DescribeInput{
-
-background: #F7F7F7 0% 0% no-repeat padding-box;
-border-radius: 8px;
-opacity: 1;
-}
-
-#Permission{
-
-font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 15px/17px var(--unnamed-font-family-helvetica-neue);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-3db7e4);
-text-align: left;
-font: normal normal normal 15px/17px Helvetica Neue;
-letter-spacing: 0px;
-color: #3DB7E4;
-opacity: 1;
-}
-
-
-#ddown{
-
-background: #F7F7F7 0% 0% no-repeat padding-box;
-border-radius: 4px;
-opacity: 1;
+	letter-spacing: 0px;
+	color: #A0A5AF;
+	opacity: 1
 
 }
 
-
-#menu1{
-
-font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/18px var(--unnamed-font-family-helvetica-neue);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-4d4f53);
-text-align: left;
-font: normal normal normal 16px/18px Helvetica Neue;
-letter-spacing: 0px;
-color: #4D4F53;
-opacity: 1;
+#ddown3 {
+	opacity: 1;
 }
 
-#ddown2{
-
-font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/18px var(--unnamed-font-family-helvetica-neue);
-letter-spacing: var(--unnamed-character-spacing-0);
-text-align: left;
-font: normal normal normal 16px/18px Helvetica Neue;
-letter-spacing: 0px;
-color: #A0A5AF;
-opacity: 1;
+#menu3 {
+	text-align: left;
+	letter-spacing: 0px;
+	color: #A0A5AF;
+	opacity: 1;
 }
 
-
-#menu2{
-
-font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/18px var(--unnamed-font-family-helvetica-neue);
-letter-spacing: var(--unnamed-character-spacing-0);
-text-align: left;
-font: normal normal normal 16px/18px Helvetica Neue;
-letter-spacing: 0px;
-color: #A0A5AF;
-opacity: 1;
+#midgridcol1,
+#grid2 {
+	width: 100%;
+    /* font-family:"Helvetica"; */
 }
 
-
-#ddown3{
-    
-
-    opacity: 1;
+#gr2 {
+	width: 100%;
+	height: auto;
 }
 
-
-#menu3{
-  
-
-font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/18px var(--unnamed-font-family-helvetica-neue);
-letter-spacing: var(--unnamed-character-spacing-0);
-text-align: left;
-font: normal normal normal 16px/18px Helvetica Neue;
-letter-spacing: 0px;
-color: #A0A5AF;
-opacity: 1;
+#canc {
+	letter-spacing: 0;
+	text-align: left;
+	letter-spacing: 0px;
+	color: #A0A5AF;
+	opacity: 1;
 }
 
-#midgridcol1, #grid2{
-    width: 100%;
+#backCanc {
+	background: #F7F7F7 0% 0% no-repeat padding-box;
+	border-radius: 21px;
+	opacity: 1;
 }
 
-
-#gr2{
-    width: 100%;
-    height: auto;    
-    
+#backDone {
+	border: 1px solid #3db7e4;
+	border: 1px solid #3DB7E4;
+	border-radius: 21px;
+	opacity: 1;
 }
 
-#canc{
-   
-font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 20px/24px var(--unnamed-font-family-helvetica-neue);
-letter-spacing: var(--unnamed-character-spacing-0);
-text-align: left;
-font: normal normal normal 20px/24px Helvetica Neue;
-letter-spacing: 0px;
-color: #A0A5AF;
-opacity: 1;
+#done {
+	letter-spacing: 0;
+	color: #3db7e4;
+	text-align: left;
+	letter-spacing: 0px;
+	color: #3DB7E4;
+	opacity: 1;
 }
 
-#backCanc{
-   
-background: #F7F7F7 0% 0% no-repeat padding-box;
-border-radius: 21px;
-opacity: 1;
-}
-
-
-#backDone{
-    
-border: 1px solid var(--unnamed-color-3db7e4);
-border: 1px solid #3DB7E4;
-border-radius: 21px;
-opacity: 1;
-}
-
-#done{
-   
-font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 20px/24px var(--unnamed-font-family-helvetica-neue);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-3db7e4);
-text-align: left;
-font: normal normal normal 20px/24px Helvetica Neue;
-letter-spacing: 0px;
-color: #3DB7E4;
-opacity: 1;
-}
-
-#check{
-    border-radius: 50%;
-background: var(--unnamed-color-3db7e4) 0% 0% no-repeat padding-box;
-background: #3DB7E4 0% 0% no-repeat padding-box;
-opacity: 1;
+#check {
+	border-radius: 50%;
+	background: #3db7e4 no-repeat padding-box;
+	background: #3DB7E4 0% 0% no-repeat padding-box;
+	color: white;
+	opacity: 1;
 }
