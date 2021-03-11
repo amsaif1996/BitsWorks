@@ -24,7 +24,7 @@
                     </div>
                     
                 <div class="d-flex">
-                    <p id="up">Upload</p> 
+                    <p id="up">Upload</p> &nbsp;
                     <svg id="Icon_ionic-ios-cloud-upload" data-name="Icon ionic-ios-cloud-upload" xmlns="http://www.w3.org/2000/svg" width="22.857" height="20" viewBox="0 0 22.857 20">
                         <path id="Path_15" data-name="Path 15" d="M19.513,8.223A6.7,6.7,0,0,0,7.348,5.138a3.164,3.164,0,0,0-1.2-.237A3.306,3.306,0,0,0,2.96,8.178,4.361,4.361,0,0,0,0,12.317a4.2,4.2,0,0,0,4.058,4.219h6.79V10.2L8.71,12.308a.581.581,0,0,1-.817-.826L11.018,8.4h0a.568.568,0,0,1,.183-.121.554.554,0,0,1,.223-.045.582.582,0,0,1,.406.165l3.125,3.08a.581.581,0,0,1-.817.826L12.009,10.2v6.335H18.8a4.2,4.2,0,0,0,.714-8.312Z" transform="translate(0 -2.25)" fill="#d10d74"/>
                         <path id="Path_16" data-name="Path 16" d="M17.086,29.884a.58.58,0,0,0,1.161,0V24.75H17.086Z" transform="translate(-6.238 -10.465)" fill="#d10d74"/>
@@ -72,8 +72,8 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="22.5" height="22.505" viewBox="0 0 22.5 22.505">
                             <path id="Icon_metro-link" data-name="Icon metro-link" d="M12.571,16.328a1.167,1.167,0,0,1-.828-.343,5.5,5.5,0,0,1,0-7.766L16.064,3.9a5.491,5.491,0,1,1,7.766,7.766l-1.975,1.975A1.17,1.17,0,0,1,20.2,11.984l1.975-1.975a3.151,3.151,0,0,0-4.456-4.456L13.4,9.874a3.154,3.154,0,0,0,0,4.456,1.17,1.17,0,0,1-.827,2ZM8.424,24.795a5.491,5.491,0,0,1-3.883-9.374l1.975-1.975A1.17,1.17,0,1,1,8.172,15.1L6.2,17.076a3.151,3.151,0,0,0,4.456,4.456l4.321-4.321a3.154,3.154,0,0,0,0-4.456A1.17,1.17,0,1,1,16.628,11.1a5.5,5.5,0,0,1,0,7.766l-4.321,4.321a5.456,5.456,0,0,1-3.883,1.608Z" transform="translate(-2.936 -2.29)" fill="#a0a5af"/>
                           </svg>
-                    </div>
-                    <div id="LinkMargin">   
+                    </div> &nbsp; &nbsp; &nbsp;
+                    <div>   
                  <h4 id="links" style="margin-bottom: 10%;">Link share </h4>
                     </div>
                 </div>
@@ -82,18 +82,18 @@
                 <form>
                     <div class="form-group">
                       <label id="shared" for="Shared by">Shared By</label>
-                      <input type="text" class="form-control" id="Sharedinput"  name="Shared by" placeholder="Khadizatul Kobra Sraboni">
+                      <input type="text" class="form-control" id="Sharedinput"  name="Shared by">
                     </div>
 
                     <div class="form-group">
                         <label id="linktitle" for="link">Link Title</label>
-                        <input type="text" class="form-control" id="linkinput"  name="link" placeholder="Rohingya's tragedy">
+                        <input type="text" class="form-control" id="linkinput"  name="link">
                       </div>
                     
 
                       <div class="form-group">
                         <label id="pasteUrl" for="paste">Paste URL</label>
-                        <input type="text" class="form-control" id="pasteurlInput"  name="paste" placeholder="http://www.mrsbond.info/2015/11/chrome-friendly-word-cloud-generators.html">
+                        <input type="text" class="form-control" id="pasteurlInput"  name="paste">
                       </div>  
 
 
@@ -101,9 +101,8 @@
                         <label id="Describe" for="desc">Description</label>
                         <label id="option" for="desc">(optional)</label>
 
-                        <input type="text" class="form-control" id="DescribeInput"  name="desc" placeholder="Write something about the link...">
+                        <input type="text" class="form-control" id="DescribeInput"  name="desc">
                       </div> 
-                      
 
 
 
@@ -155,42 +154,24 @@
                             Share with   
                                  <span class="caret"></span></button>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                         <li>   <input type="radio" id="public" value="Public"> <label id="PubicLabel">Public</label> </li>
                          
-                            <li>  <span><img src="public.svg" alt="" id="imgMargin"></span> <label id="PubicLabel"> Public  </label> <input type="radio" id="radioMargin1" value="Public"> </li>
-                             
-                             <li><span><img src="only-me.svg" alt="" id="imgMargin"></span>  <label id="OnlyMeLabel">  Only Me </label> <input type="radio" id="radioMargin2" value="Only Me"> </li>
-    
-                             <li>
-                                 <button class="btn btn-default dropdown-toggle" type="button" id="SpecificPerson" data-toggle="dropdown"> <span><img src="specific-person.svg" alt=""></span>  Specific Person  
-                                    </button>
-                                    <ul class="dropdown-menu" role="menu" aria-labelledby="SpecificPerson"></ul>
-                              </li>
-                              <li>
-                                <button class="btn btn-default dropdown-toggle" type="button" id="DivisionAndGrade" data-toggle="dropdown"> <span><img src="programme.svg" alt=""></span>  Division And Grade  
-                                </button>
-                                    <ul class="dropdown-menu" role="menu" aria-labelledby="DivisionAndGrade"></ul>
-                              </li>
+                         <li><input type="radio" id="OnlyMe" value="Only Me"> <label id="OnlyMeLabel">Only Me</label> </li>
 
-
-
-                         <!-- <li>   <input type="radio" id="public" value="Public"> <label id="PubicLabel">Public</label> </li>
-                         
-                         <li><input type="radio" id="OnlyMe" value="Only Me"> <label id="OnlyMeLabel">Only Me</label> </li> -->
-
-                          <!-- <li>
+                          <li>
 
                             <button class="btn btn-default dropdown-toggle" type="button" id="SpecificPerson" data-toggle="dropdown">Specific Person  
                                 <span class="caret"></span></button>
                                 <ul class="dropdown-menu" role="menu" aria-labelledby="SpecificPerson">
                                     <li></li>
                                 </ul>
-                          </li> -->
-                          <!-- <li>
+                          </li>
+                          <li>
 
                             <button class="btn btn-default dropdown-toggle" type="button" id="DivisionAndGrade" data-toggle="dropdown">Division And Grade  
                                 <span class="caret"></span></button>
                                 <ul class="dropdown-menu" role="menu" aria-labelledby="DivisionAndGrade"></ul>
-                          </li> -->
+                          </li>
                           
                         </ul>
                       </div>
@@ -257,9 +238,9 @@
     <div id="backCanc">
         <button type="button" class="btn" id="canc" style="background-color: transparent;">Cancel</button>
     </div>
-   
+    &nbsp &nbsp &nbsp
     <div>
-        <div id="backDone" class="justify-content-between"> 
+        <div id="backDone" class="justify-content-between">  &nbsp
             
            
             <button type="button" class="btn" id="done" style="background-color: transparent;">
@@ -279,7 +260,7 @@
         </div>
         </div>
 
-        
+        <br><br>
 
 
 
