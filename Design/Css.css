@@ -70,6 +70,7 @@
 	letter-spacing: 0px;
 	color: #4D4F53;
 	opacity: 1;
+	margin-bottom: 10%;
     
 }
 
@@ -236,6 +237,7 @@
 #midgridcol1,
 #grid2 {
 	width: 100%;
+	margin-bottom: 5%;
     /* font-family:"Helvetica"; */
 }
 
@@ -247,6 +249,7 @@
 }
 
 #canc {
+	background-color: transparent;
 	letter-spacing: 0;
 	text-align: left;
 	letter-spacing: 0px;
@@ -269,6 +272,7 @@
 }
 
 #done {
+	background-color: transparent;
 	letter-spacing: 0;
 	color: #3db7e4;
 	text-align: left;
@@ -325,4 +329,7 @@
 	width: 100%;
 
 }
+}
+#NavbarMargin{
+	margin-bottom: 3%;
 }
